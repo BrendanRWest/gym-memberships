@@ -8,6 +8,14 @@ public class PremiumMembership extends Membership{
         this.guestPasses = guestPasses;
     }
 
+    public int getGuestPasses() {
+        return guestPasses;
+    }
+
+    public void setGuestPasses(int guestPasses) {
+        this.guestPasses = guestPasses;
+    }
+
     @Override
     public BigDecimal getMonthlyPrice(){
         return getBaseRate().add(new BigDecimal("18.50"));
