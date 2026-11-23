@@ -1,2 +1,28 @@
-public class BasicMembership {
+import java.math.BigDecimal;
+
+public class BasicMembership extends Membership{
+
+    private boolean offPeakOnly;
+
+    public BasicMembership(String memberName, int months, BigDecimal baseRate, boolean offPeakOnly) {
+        super(memberName, months, baseRate);
+        this.offPeakOnly = offPeakOnly;
+    }
+
+    @Override
+    public BigDecimal getMonthlyPrice(){
+        if(offPeakOnly){
+            return getBaseRate().subtract(new BigDecimal("5.00"));
+        } else{
+            return getBaseRate();
+        }
+    }
+
+    @Override
+    public String toString() {
+        return getMemberName() +
+                ", " + getMonths() +
+                " months, $" + getMonthlyPrice() +
+                " per month";
+    }
 }
