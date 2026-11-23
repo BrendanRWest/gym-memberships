@@ -1,6 +1,7 @@
-import java.lang.reflect.Member;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -52,10 +53,19 @@ public class Main {
             monthlyIncome = monthlyIncome.add(member.getMonthlyPrice());
             allContracts = allContracts.add(member.getContractTotal());
         }
+
+        String largestContractMemberName = "";
+        for (Membership member : members) {
+            if(member.getContractTotal().compareTo(findLargestContract(members)) == 0){
+                largestContractMemberName = member.getMemberName();
+            }
+        }
+
         System.out.println("\n--- Totals ---\n");
         System.out.println("Memberships: " + members.size());
         System.out.println("Monthly income: $" + monthlyIncome.setScale(2));
         System.out.println("All contracts: $" + allContracts.setScale(2));
+        System.out.println("Largest contract: " + largestContractMemberName + ", $" + findLargestContract(members).setScale(2));
 
         System.out.println("\n--- Front desk notes---\n");
         for (Membership member : members) {
@@ -83,5 +93,15 @@ public class Main {
         System.out.println("\tMonthly price: $" + membership.getMonthlyPrice().setScale(2) +
                 ", sign-up fee: $" + membership.getSignUpFee() +
                 ", contract total $" + membership.getContractTotal());
+    }
+
+    private static BigDecimal findLargestContract(List<Membership> members) {
+
+        List<BigDecimal> largestContract = members
+                .stream().map(member -> member.getContractTotal())
+                .sorted(Comparator.reverseOrder())
+                .toList();
+
+        return largestContract.get(0);
     }
 }
