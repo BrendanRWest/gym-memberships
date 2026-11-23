@@ -52,9 +52,7 @@ public class Membership {
 
     @Override
     public String toString() {
-        return memberName +
-                ", " + months +
-                " months, $" + baseRate +
-                " per month";
+        return "Membership | " + getMemberName() + " | " +
+                getMonths() + " months";
     }
 }

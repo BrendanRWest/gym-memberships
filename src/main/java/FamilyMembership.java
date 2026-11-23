@@ -24,9 +24,7 @@ public class FamilyMembership extends Membership{
 
     @Override
     public String toString() {
-        return getMemberName() +
-                ", " + getMonths() +
-                " months, $" + getMonthlyPrice().setScale(2) +
-                " per month";
+        return "Family | " + getMemberName() + " | " + getMonths() +
+                " months | extra members: " + extraMembers;
     }
 }
