@@ -7,8 +7,9 @@ public class Main {
 
         ArrayList<Membership> members= new ArrayList<>();
 
-        Membership member1 = new Membership("Henry Clark",
-                3, new BigDecimal("30.00"));
+        // 'Membership' is abstract; cannot be instantiated
+        /*Membership member1 = new Membership("Henry Clark",
+                3, new BigDecimal("30.00"));*/
 
         BasicMembership member2 = new BasicMembership("Alice Johnson",
                 6, new BigDecimal("30.00"), true);
@@ -28,7 +29,7 @@ public class Main {
         FamilyMembership member7 = new FamilyMembership("Emma Wilson",
                 6, new BigDecimal("30.00"), 1);
 
-        members.add(member1);
+        // members.add(member1);
         members.add(member2);
         members.add(member3);
         members.add(member4);
