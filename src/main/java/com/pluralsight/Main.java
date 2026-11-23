@@ -1,3 +1,5 @@
+package com.pluralsight;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -8,8 +10,8 @@ public class Main {
 
         ArrayList<Membership> members= new ArrayList<>();
 
-        // 'Membership' is abstract; cannot be instantiated
-        /*Membership member1 = new Membership("Henry Clark",
+        // 'com.pluralsight.Membership' is abstract; cannot be instantiated
+        /*com.pluralsight.Membership member1 = new com.pluralsight.Membership("Henry Clark",
                 3, new BigDecimal("30.00"));*/
 
         BasicMembership member2 = new BasicMembership("Alice Johnson",

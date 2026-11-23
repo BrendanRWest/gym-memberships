@@ -1,3 +1,5 @@
+package com.pluralsight;
+
 import java.math.BigDecimal;
 
 public abstract class Membership {
@@ -50,7 +52,7 @@ public abstract class Membership {
 
     @Override
     public String toString() {
-        return "Membership | " + getMemberName() + " | " +
+        return "com.pluralsight.Membership | " + getMemberName() + " | " +
                 getMonths() + " months";
     }
 }

@@ -1,3 +1,5 @@
+package com.pluralsight;
+
 import java.math.BigDecimal;
 
 public class BasicMembership extends Membership{
@@ -17,8 +19,8 @@ public class BasicMembership extends Membership{
         this.offPeakOnly = offPeakOnly;
     }
 
-    /* Class 'BasicMembership' must either be declared abstract or
-    implement abstract method 'getMonthlyPrice()' in 'Membership' */
+    /* Class 'com.pluralsight.BasicMembership' must either be declared abstract or
+    implement abstract method 'getMonthlyPrice()' in 'com.pluralsight.Membership' */
     @Override
     public BigDecimal getMonthlyPrice(){
         if(offPeakOnly){
