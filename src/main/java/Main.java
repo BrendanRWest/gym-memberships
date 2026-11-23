@@ -26,7 +26,7 @@ public class Main {
                 6, new BigDecimal("30.00"), 1);
 
 
-        System.out.println("=== Gym Memberships ===");
+        System.out.println("\n=== Gym Memberships ===");
         System.out.println(member1);
         System.out.println(member2);
         System.out.println(member3);
@@ -35,10 +35,20 @@ public class Main {
         System.out.println(member6);
         System.out.println(member7);
 
-        System.out.println("--- Guest Passes ---");
+        System.out.println("\n--- Guest Passes ---");
         member4.useGuestPass();
         member4.useGuestPass();
         member4.useGuestPass();
         member5.useGuestPass();
+
+        System.out.println("\n--- Sign-up Fee and contract total ---");
+        System.out.println(member1.getMemberName() + ": fee $" + member1.getSignUpFee() +
+                ", total $" + member1.getContractTotal());
+        System.out.println(member4.getMemberName() + ": fee $" + member4.getSignUpFee() +
+                ", total $" + member4.getContractTotal());
+        System.out.println(member5.getMemberName() + ": fee $" + member5.getSignUpFee() +
+                ", total $" + member5.getContractTotal());
+        System.out.println(member6.getMemberName() + ": fee $" + member6.getSignUpFee() +
+                ", total $" + member6.getContractTotal());
     }
 }
