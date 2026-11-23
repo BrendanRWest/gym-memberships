@@ -29,6 +29,9 @@ public class Main {
         FamilyMembership member7 = new FamilyMembership("Emma Wilson",
                 6, new BigDecimal("30.00"), 1);
 
+        CorporateMembership member8 = new CorporateMembership("Olivia Martin",
+                12, new BigDecimal("30.00"), new BigDecimal("0.40"));
+
         // members.add(member1);
         members.add(member2);
         members.add(member3);
@@ -36,6 +39,7 @@ public class Main {
         members.add(member5);
         members.add(member6);
         members.add(member7);
+        members.add(member8);
 
         BigDecimal monthlyIncome = BigDecimal.ZERO;
         BigDecimal allContracts = BigDecimal.ZERO;
