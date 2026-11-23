@@ -19,6 +19,12 @@ public class Main {
         PremiumMembership member5 = new PremiumMembership("Frank Miller",
                 3, new BigDecimal("30.00"), 0);
 
+        FamilyMembership member6 = new FamilyMembership("Grace Lee",
+                12, new BigDecimal("30.00"), 3);
+
+        FamilyMembership member7 = new FamilyMembership("Emma Wilson",
+                6, new BigDecimal("30.00"), 1);
+
 
         System.out.println("=== Gym Memberships ===");
         System.out.println(member1);
@@ -26,6 +32,8 @@ public class Main {
         System.out.println(member3);
         System.out.println(member4);
         System.out.println(member5);
+        System.out.println(member6);
+        System.out.println(member7);
 
         System.out.println("--- Guest Passes ---");
         member4.useGuestPass();
