@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="gym-memberships" name="Gym Memberships UML">
+    <mxGraphModel dx="1502" dy="1286" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1540" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="parent-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontSize=21;fontStyle=1;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;font-size:21px;&quot;&gt;&lt;i&gt;Membership&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="560" x="485" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="parent-fields" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontFamily=Courier New;fontSize=16;align=left;verticalAlign=middle;spacingLeft=17;spacingTop=8;" value="&lt;div style=&quot;line-height:1.7;&quot;&gt;- memberName: String&lt;br&gt;- months: int&lt;br&gt;- baseRate: BigDecimal&lt;/div&gt;" vertex="1">
+          <mxGeometry height="102" width="560" x="485" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="parent-methods" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontFamily=Courier New;fontSize=16;align=left;verticalAlign=middle;spacingLeft=17;spacingTop=8;" value="&lt;div style=&quot;line-height:1.65;&quot;&gt;+ Membership(memberName: String,&lt;br&gt;    months: int, baseRate: BigDecimal)&lt;br&gt;&lt;i&gt;+ getMonthlyPrice(): BigDecimal&lt;/i&gt;&lt;br&gt;+ getSignUpFee(): BigDecimal&lt;br&gt;+ getContractTotal(): BigDecimal&lt;br&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="196" width="560" x="484.5" y="199" as="geometry" />
+        </mxCell>
+        <mxCell id="basic-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontSize=21;fontStyle=1;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;font-size:21px;&quot;&gt;BasicMembership&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="465" x="35" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="basic-fields" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontFamily=Courier New;fontSize=16;align=left;verticalAlign=middle;spacingLeft=17;spacingTop=8;" value="&lt;div style=&quot;line-height:1.7;&quot;&gt;- offPeakOnly: boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="465" x="35" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="basic-methods" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontFamily=Courier New;fontSize=16;align=left;verticalAlign=middle;spacingLeft=17;spacingTop=8;" value="&lt;div style=&quot;line-height:1.65;&quot;&gt;+ BasicMembership(memberName: String,&lt;br&gt;    months: int, baseRate: BigDecimal,&lt;br&gt;    offPeakOnly: boolean)&lt;br&gt;+ getMonthlyPrice(): BigDecimal&lt;br&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="168" width="465" x="35" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="premium-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontSize=21;fontStyle=1;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;font-size:21px;&quot;&gt;PremiumMembership&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="465" x="532" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="premium-fields" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontFamily=Courier New;fontSize=16;align=left;verticalAlign=middle;spacingLeft=17;spacingTop=8;" value="&lt;div style=&quot;line-height:1.7;&quot;&gt;- guestPasses: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="465" x="532" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="premium-methods" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontFamily=Courier New;fontSize=16;align=left;verticalAlign=middle;spacingLeft=17;spacingTop=8;" value="&lt;div style=&quot;line-height:1.65;&quot;&gt;+ PremiumMembership(memberName: String,&lt;br&gt;    months: int, baseRate: BigDecimal,&lt;br&gt;    guestPasses: int)&lt;br&gt;+ getMonthlyPrice(): BigDecimal&lt;br&gt;+ useGuestPass(): void&lt;br&gt;+ getSignUpFee(): BigDecimal&lt;br&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="224" width="465" x="532" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="family-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontSize=21;fontStyle=1;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;font-size:21px;&quot;&gt;FamilyMembership&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="465" x="1029" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="family-fields" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontFamily=Courier New;fontSize=16;align=left;verticalAlign=middle;spacingLeft=17;spacingTop=8;" value="&lt;div style=&quot;line-height:1.7;&quot;&gt;- extraMembers: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="465" x="1029" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="family-methods" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#334b64;fontColor=light-dark(#FFFFFF,#FFFFFF);fontFamily=Courier New;fontSize=16;align=left;verticalAlign=middle;spacingLeft=17;spacingTop=8;" value="&lt;div style=&quot;line-height:1.65;&quot;&gt;+ FamilyMembership(memberName: String,&lt;br&gt;    months: int, baseRate: BigDecimal,&lt;br&gt;    extraMembers: int)&lt;br&gt;+ getMonthlyPrice(): BigDecimal&lt;br&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="168" width="465" x="1029" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-basic" edge="1" parent="1" source="basic-header" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334b64;strokeWidth=2.5;endArrow=block;endFill=0;endSize=17;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.18;entryY=1;entryDx=0;entryDy=0;" target="parent-methods" value="">
+          <mxGeometry relative="1" x="0.0017" as="geometry">
+            <Array as="points">
+              <mxPoint x="267.5" y="442.5" />
+              <mxPoint x="520" y="442.5" />
+              <mxPoint x="520" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-premium" edge="1" parent="1" source="premium-header" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334b64;strokeWidth=2.5;endArrow=block;endFill=0;endSize=17;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="parent-methods" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-family" edge="1" parent="1" source="family-header" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334b64;strokeWidth=2.5;endArrow=block;endFill=0;endSize=17;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.82;entryY=1;entryDx=0;entryDy=0;" target="parent-methods" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1261.5" y="420" />
+              <mxPoint x="944.2" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
